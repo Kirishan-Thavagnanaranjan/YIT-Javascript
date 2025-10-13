@@ -41,6 +41,54 @@
         console.log(getName4());
         console.log(getName4("Kirishan"));
         console.log(getName4("Kirish", "Thavagnanaranjan"));
+
+
+        //global scope
+        var name = "Kirishan";
+        function getName5(){
+           console.log("my name is " + name);
+        }
+        getName5();
+
+        
+        let name2 = "kirish";
+        function getName6(){
+            console.log("my name is " + name2);
+        }
+        getName6();
+
+
+
+        //Function scope
+        function getNum(){
+            let num1 = 10;
+            var num2 = 20;
+            console.log(num1);
+            console.log(num2);
+        }
+        getNum();
+
+        // console.log(num1); 
+        // console.log(num2);
+
+
+
+        //Block scope
+       function getNum2(){
+            if(true){
+                let num1 = 100;
+                var num2 = 200;
+                console.log(num1);
+                console.log(num2);
+            }
+            console.log(num2);
+            console.log(num1); 
+       }
+         getNum2();
+
+
+         const PI = 3.14;
+         console.log(PI);
     </script>
 </body>
 </html>
