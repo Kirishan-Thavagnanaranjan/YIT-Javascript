@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+    <script>
+        //Default function
+        function getName(){
+            console.log("My name is kirishan");
+        }
+        getName();
+
+
+        //Parameterised function
+        function getName2(name){
+            console.log("My name is "+name);
+        }
+
+        getName2("Kirishan");
+
+
+        //Return function
+        function getName3(fName , lName){
+            return fName + " " + lName;
+        }
+
+        console.log(getName3("Kirishan", "Thavagnanaranjan"));
+
+        let fullName = getName3("Kirishan", "Thavagnanaranjan");
+        console.log(fullName);
+
+
+        //Default parameter function
+        function getName4(fName="Thavagnanaranjan" , lName="Kirishan"){
+            return fName + " " + lName;
+        }
+        console.log(getName4());
+        console.log(getName4("Kirishan"));
+        console.log(getName4("Kirish", "Thavagnanaranjan"));
+    </script>
+</body>
+</html>
