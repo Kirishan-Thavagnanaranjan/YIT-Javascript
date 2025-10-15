@@ -54,7 +54,17 @@ let myName11 =(name ="kirishan") => {console.log("My name is "+name);}
 //arrow function with out return keyword
 let myName12 = (name) => "my name is " +name;
 
-let myName13 = (x,y) => x>y ? x:y;
+
+let findBigNum1 =(x,y) => {
+    if (x>y){
+        return x;
+    }
+    else{
+        return y;
+    }
+}
+
+let findBigNum2 = (x,y) => x>y ? x:y;
 
 //calling functions
 myName();
@@ -70,4 +80,5 @@ myName9("Kirishan");
 console.log(myName10("Kirishan"));
 myName11();
 console.log(myName12("Kirishannn"));
-console.log(myName13(10,5));
+console.log(findBigNum2(10,15));
+console.log(findBigNum2(10,5));
