@@ -1,5 +1,5 @@
 class Students{
-    constructor(fname,lname,grade,subject,address,age){
+    constructor(fname,lname,grade,subjects,address,age){
         this.fname=fname;
         this.lname=lname;
         this.grade=grade;
@@ -27,10 +27,19 @@ let stu5 = new Students("Arooran","sundar","11D",["Maths","Agriculture","Tamil"]
 
 let students = [stu1,stu2,stu3,stu4,stu5];
 
+let student="";
+for(student in students){
+let studentsmap = student.map();
+console.log(studentsmap);
+}
 
+for(const x of studentsmap.keys()){
+    if(Array.isArray(x)){
+        let array_string= studentsmap.x.join(",");
+        console.log(studentsmap.x);
+    }
+    else {
+        console.log(studentsmap.x);
 
-student.forEach(obj => {
-    if 
-})
-
-
+    }
+}
