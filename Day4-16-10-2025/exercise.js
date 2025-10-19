@@ -27,19 +27,15 @@ let stu5 = new Students("Arooran","sundar","11D",["Maths","Agriculture","Tamil"]
 
 let students = [stu1,stu2,stu3,stu4,stu5];
 
-let student="";
-for(student in students){
-let studentsmap = student.map();
-console.log(studentsmap);
-}
+const tableData = students.map(student =>{
+    const data={};
 
-for(const x of studentsmap.keys()){
-    if(Array.isArray(x)){
-        let array_string= studentsmap.x.join(",");
-        console.log(studentsmap.x);
+    for (let key in student){
+        if(Array.isArray(studnet[key])){
+            data[key] = student[key].join(",");
+        }
+        else{
+            data[key] =student[key];
+        }
     }
-    else {
-        console.log(studentsmap.x);
-
-    }
-}
+})
