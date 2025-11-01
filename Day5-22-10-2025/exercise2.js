@@ -1,4 +1,4 @@
-class Student{
+export class Student{
     constructor(id,name,mark1,mark2,mark3){
         this.id = id ;
         this.name  =  name;
